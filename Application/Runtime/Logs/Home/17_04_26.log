@@ -1,0 +1,2947 @@
+[ 2017-04-26T08:39:03+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123458' )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0060s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=3 )  [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-26T08:39:08+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `client` WHERE ( eid='3' )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2017-04-26T08:39:13+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/ClientListByClick
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.cid='1 )' at line 1
+ [ SQL语句 ] : SELECT r.*,c.name,c.phone,c.site,c.level,e.turename FROM record r,clicent c,employee e WHERE ( r.cid=c.cid and r.eid=e.eid c.cid='1 ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.cid='1 )' at line 1
+ [ SQL语句 ] : SELECT r.*,c.name,c.phone,c.site,c.level,e.turename FROM record r,clicent c,employee e WHERE ( r.cid=c.cid and r.eid=e.eid c.cid='1 ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T08:39:14+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadRecord/pageNo=1/pageSize=10/clientId/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: clientId D:\PHP-webapp\Thinkphp\Application\Home\Controller\Client\ClientController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `record` [ RunTime:0.0040s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.cid=' )' at line 1
+ [ SQL语句 ] : SELECT r.*,c.name,c.phone,c.site,c.level,e.turename FROM record r,clicent c,employee e WHERE ( r.cid=c.cid and r.eid=e.eid c.cid=' ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'c.cid=' )' at line 1
+ [ SQL语句 ] : SELECT r.*,c.name,c.phone,c.site,c.level,e.turename FROM record r,clicent c,employee e WHERE ( r.cid=c.cid and r.eid=e.eid c.cid=' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T08:39:45+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/laodHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T08:39:53+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T08:40:01+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T08:42:25+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T08:42:29+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T08:42:40+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/1/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T08:42:47+08:00 ] ::1 /Thinkphp/index.php/Home/Complain/Complain/LaodComplainList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `complain` LIMIT 0,3   [ RunTime:0.0020s ]
+
+[ 2017-04-26T08:43:01+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `client` WHERE ( eid='3' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-26T08:45:08+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/laodHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T08:45:14+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0070s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-26T08:45:19+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+ERR: 1052:Column 'eid' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM employee e,client c WHERE ( c.eid=e.eid and eid='1' ) 
+ERR: 1052:Column 'eid' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM employee e,client c WHERE ( c.eid=e.eid and eid='1' ) 
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T08:45:20+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.014001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T08:49:14+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T08:49:15+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT * FROM employee e,client c WHERE ( c.eid=e.eid )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T08:49:43+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-26T08:49:44+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT * FROM employee e,client c WHERE ( c.eid=e.eid )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T08:51:12+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.006000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T08:51:13+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT * FROM employee e,client c WHERE ( c.eid=e.eid )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-26T08:51:19+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0050s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T08:51:24+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-04-26T08:51:25+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT * FROM employee e,client c WHERE ( c.eid=e.eid )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-26T08:53:03+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T08:53:04+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.*,c.* FROM employee e,client c WHERE ( c.eid=e.eid )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-26T08:53:22+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-26T08:53:23+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.016001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.*,c.* FROM employee e,client c WHERE ( c.eid=e.eid )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T08:55:02+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-26T08:55:03+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0050s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T08:55:12+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123458' )  [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0050s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=3 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2017-04-26T08:55:15+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `client` WHERE ( eid='3' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-26T08:55:36+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0040s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T08:55:41+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-04-26T08:55:42+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0140s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T08:56:56+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-26T08:56:57+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0080s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T08:57:50+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-26T08:57:52+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.5220s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T08:58:29+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0090s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T08:58:30+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.035002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2017-04-26T09:48:27+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+ERR: 1146:Table 'crm2.clicen' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `clicen`
+ERR: 1146:Table 'crm2.clicen' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `clicen`
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T09:48:29+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 1146:Table 'crm2.clicen' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `clicen`
+ERR: 1146:Table 'crm2.clicen' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `clicen`
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Db\Driver.class.php:170) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T09:50:39+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0050s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T09:50:44+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T09:50:45+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0140s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T09:53:40+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0050s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2017-04-26T09:53:45+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-26T09:53:46+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0090s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T10:01:33+08:00 ] ::1 /Thinkphp/index.php/Home/Complain/Complain/LaodComplainList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `complain` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `complain` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `complain` LIMIT 0,3   [ RunTime:0.0000s ]
+
+[ 2017-04-26T10:02:08+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T10:02:18+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/laodEmployeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `employee` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `employee` LIMIT 0,3   [ RunTime:0.0010s ]
+
+[ 2017-04-26T10:02:27+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/laodEmployeeList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `employee` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `employee` LIMIT 0,3   [ RunTime:0.0020s ]
+
+[ 2017-04-26T10:02:30+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.003001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-26T10:02:31+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0050s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T10:02:55+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T10:03:01+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/1/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T10:03:04+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T10:14:08+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0040s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T10:25:01+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `employee` WHERE ( number='1 or 1 = 1' )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T10:25:17+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `employee` WHERE ( number='1or1=1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T10:25:57+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T10:26:24+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `employee` WHERE ( number='1 or 1=1' )  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2017-04-26T11:06:15+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `employee` WHERE ( number='1or1=1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2017-04-26T11:24:49+08:00 ] ::1 /Thinkphp/index.php/Home/User/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `employee` WHERE ( number='123456' )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant pass - assumed 'pass' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 25 行.
+NOTIC: [8] Use of undefined constant eid - assumed 'eid' D:\PHP-webapp\Thinkphp\Application\Home\Controller\User\UserController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `employeejob` [ RunTime:0.0040s ]
+SQL: SELECT m.* FROM employeejob ej,jobmenu jm,menu m WHERE ( ej.jid=jm.jid and jm.mid=m.mid and ej.eid=1 )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2017-04-26T11:24:54+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/testTree
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.007000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `client` WHERE ( eid='1' )  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T11:24:55+08:00 ] ::1 /Thinkphp/index.php/Home/Client/Client/loadClient/pageNo=1/pageSize=10/eid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `client` [ RunTime:0.0070s ]
+ERR: 参数错误或者未定义:eid
+
+[ 2017-04-26T11:27:49+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/laodHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:40:23+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/laodHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `houses` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:40:35+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` WHERE `name` LIKE '%水%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` WHERE `name` LIKE '%水%' LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:40:45+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:40:54+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` WHERE `price` LIKE '%5%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` WHERE `price` LIKE '%5%' LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:45:02+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/laodHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:45:09+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` WHERE ( 1=1 and like '%水%' ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like '%水%' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `houses` WHERE ( 1=1 and like '%水%' ) LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'like '%水%' ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `houses` WHERE ( 1=1 and like '%水%' ) LIMIT 1  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T11:46:53+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/laodHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:46:59+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` WHERE ( 1=1 and name like '%水%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` WHERE ( 1=1 and name like '%水%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:47:10+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` WHERE ( 1=1 and price like '%5%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` WHERE ( 1=1 and price like '%5%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T11:47:20+08:00 ] ::1 /Thinkphp/index.php/Home/Houses/Houses/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `houses` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `houses` WHERE ( 1=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `houses` WHERE ( 1=1  ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:38:54+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:49:22+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:49:29+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1 and turename like '%张%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `schedule` WHERE ( 1=1 and turename like '%张%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'turename' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `schedule` WHERE ( 1=1 and turename like '%张%' ) LIMIT 0,10  
+ERR: 1054:Unknown column 'turename' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `schedule` WHERE ( 1=1 and turename like '%张%' ) LIMIT 0,10  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T13:49:46+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-04-26T13:49:51+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1 and turename like '%张%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `schedule` WHERE ( 1=1 and turename like '%张%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'turename' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `schedule` WHERE ( 1=1 and turename like '%张%' ) LIMIT 0,10  
+ERR: 1054:Unknown column 'turename' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `schedule` WHERE ( 1=1 and turename like '%张%' ) LIMIT 0,10  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T13:51:12+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:51:19+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1 and e.turename like '%张%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `schedule` WHERE ( 1=1 and e.turename like '%张%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'e.turename' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `schedule` WHERE ( 1=1 and e.turename like '%张%' ) LIMIT 0,10  
+ERR: 1054:Unknown column 'e.turename' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `schedule` WHERE ( 1=1 and e.turename like '%张%' ) LIMIT 0,10  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T13:55:21+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2017-04-26T13:55:27+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1 and e.turename like '%张%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1 and e.turename like '%张%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:55:39+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1  ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:55:47+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0100s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0000s ]
+
+[ 2017-04-26T13:55:53+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/1/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:56:01+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1 and e.turename like '%廖%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid and 1=1 and e.turename like '%廖%' ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T13:56:45+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:56:52+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0030s ]
+NOTIC: [8] Array to string conversion D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and Array ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and Array ) LIMIT 1  
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and Array ) LIMIT 1  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T13:57:38+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T13:57:45+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+NOTIC: [8] Array to string conversion D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 41 行.
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and Array ) LIMIT 1   [ RunTime:0.0010s ]
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and Array ) LIMIT 1  
+ERR: 1054:Unknown column 'Array' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid and Array ) LIMIT 1  
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 229 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at D:\PHP-webapp\Thinkphp\ThinkPHP\Common\functions.php:102) D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Think.class.php 第 230 行.
+
+[ 2017-04-26T14:02:27+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0110s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:02:32+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) AND `turename` LIKE '%张%' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) AND `turename` LIKE '%张%' LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:02:41+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) AND `turename` LIKE '%廖%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) AND `turename` LIKE '%廖%' LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:03:05+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:03:12+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T14:03:27+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0000s ]
+
+[ 2017-04-26T14:03:49+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/1/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0040s ]
+
+[ 2017-04-26T14:03:58+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:04:06+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:08:09+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T14:08:19+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:08:32+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:08:39+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:10:44+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:10:53+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:10:57+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1  ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:11:01+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/3/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 20,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:13:06+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:13:13+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:15:18+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:15:25+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:15:31+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0030s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:15:52+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:15:57+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T14:16:06+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/selectuse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( 1=1 and e.turename like '%三%' ) LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-04-26T15:43:56+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T15:44:10+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+NOTIC: [8] Undefined index: uid D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 52 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','下雨') [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T15:45:59+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T15:46:09+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','下雨') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T15:48:18+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T15:48:31+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','下雨一天') [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T15:50:05+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T15:55:24+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T15:55:38+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','大于打发打发') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:01:32+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:01:44+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0120s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T16:01:47+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0100s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:03:23+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:03:43+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.020001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.029002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:03:47+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:04:30+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:04:35+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2017-04-26T16:04:43+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:04:49+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:06:18+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:06:24+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2017-04-26T16:07:27+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:07:35+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:08:36+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:08:42+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:25:55+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:26:12+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:26:24+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:26:28+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.042002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:27:33+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:27:42+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:27:46+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:29:34+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0110s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T16:29:46+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T16:31:12+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0040s ]
+
+[ 2017-04-26T16:31:20+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006001s ]
+
+[ 2017-04-26T16:31:46+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:32:03+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-27 02:03','今天下雨') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T16:32:27+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:32:53+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','下雨') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:33:52+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:34:00+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','决定恢复较快速度回复') [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:54:40+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T16:54:47+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','斯蒂芬金科萨科夫纳斯达克') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:02:38+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:02:46+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2017-04-26T17:04:46+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0100s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:04:53+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:09:32+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:09:38+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048003s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:10:11+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2017-04-26T17:10:15+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:11:07+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:11:21+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','扩大双方尽快结婚登记') [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:13:51+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:14:02+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`) VALUES ('2017-04-26 02:03','夏尉喻') [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:14:06+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:14:19+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/1/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0000s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-04-26T17:15:44+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:15:48+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:16:07+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/1/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:18:17+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:18:25+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','这健康大会否决','1') [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0000s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0040s ]
+
+[ 2017-04-26T17:18:33+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:18:58+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/1/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:19:04+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList/pageNo/2/pageSize/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) LIMIT 10,10   [ RunTime:0.0000s ]
+
+[ 2017-04-26T17:22:48+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2017-04-26T17:22:57+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.002000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','的斤斤计较经济色彩','1') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:29:43+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:29:46+08:00 ] ::1 /Thinkphp/index.php?c=Houses&a=deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+ERR: 无法加载控制器:Houses
+
+[ 2017-04-26T17:31:00+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:31:06+08:00 ] ::1 /Thinkphp/index.php?c=Houses&a=deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+ERR: 无法加载控制器:Houses
+
+[ 2017-04-26T17:33:09+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:33:13+08:00 ] ::1 /Thinkphp/index.php?c=Houses&a=deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+ERR: 无法加载控制器:Houses
+
+[ 2017-04-26T17:36:37+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0156s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0000s ]
+
+[ 2017-04-26T17:36:40+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index:  D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 61 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0060s ]
+
+[ 2017-04-26T17:37:17+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:40:13+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:40:22+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index:  D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:42:04+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:42:08+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: sid D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:42:47+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:42:52+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: sid D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:44:09+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:44:12+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: sid D:\PHP-webapp\Thinkphp\Application\Home\Controller\Schedule\ScheduleController.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:44:52+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:44:58+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 29 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2017-04-26T17:45:02+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:45:51+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.004000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:46:05+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 28 [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:48:49+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0030s ]
+
+[ 2017-04-26T17:49:20+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 9 [ RunTime:0.0050s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 8 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2017-04-26T17:49:43+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:50:49+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:50:57+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','对江苏分hi','1') [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:51:06+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','斯达克雷吉纳','1') [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0080s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:51:13+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','可是绝对不会发觉','1') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:51:20+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 32 [ RunTime:0.0030s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 31 [ RunTime:0.0010s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 30 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2017-04-26T17:51:35+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:53:48+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
+[ 2017-04-26T17:53:53+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 17 [ RunTime:0.0050s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 16 [ RunTime:0.0070s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 15 [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:54:55+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0060s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:55:01+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 14 [ RunTime:0.0020s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 13 [ RunTime:0.0020s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 12 [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:56:08+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:56:17+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','但是艰苦奋斗不能','1') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:56:24+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','斯达克雷锋精神的那份','1') [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0050s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:56:31+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/addSchedule
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: validate D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\PHP-webapp\Thinkphp\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `schedule` (`time`,`plan`,`employeeID`) VALUES ('2017-04-26 02:03','离开的法律手段','1') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0040s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0020s ]
+
+[ 2017-04-26T17:56:36+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/deleteHousesList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0050s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 35 [ RunTime:0.0070s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 34 [ RunTime:0.0020s ]
+SQL: DELETE FROM `schedule` WHERE `sid` = 33 [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2017-04-26T17:56:40+08:00 ] ::1 /Thinkphp/index.php/Home/Schedule/Schedule/laodScheduleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `schedule` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `schedule` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `employee` [ RunTime:0.0070s ]
+SQL: SELECT e.turename,s.time,s.plan,s.sid FROM employee e,schedule s WHERE ( s.employeeID=e.eid ) ORDER BY sid desc LIMIT 0,10   [ RunTime:0.0010s ]
+
